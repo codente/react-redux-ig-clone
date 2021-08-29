@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-devServer.js
+
 
 # testing
 /coverage
@@ -18,10 +18,11 @@ devServer.js
 .env.development.local
 .env.test.local
 .env.production.local
-webpack.config.dev.js
-webpack.config.prod.js
+ webpack.config.dev.js
+ webpack.config.prod.js
 .babelrc
 .eslintrc
+devServer.js
 
 npm-debug.log*
 yarn-debug.log*
