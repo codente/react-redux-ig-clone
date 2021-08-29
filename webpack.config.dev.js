@@ -4,8 +4,8 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'source-map',
   entry: [
-    'webpack-hot-middleware/src',
-    './src/reduxstagram'
+    'webpack-hot-middleware/client',
+    './client/reduxstagram'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
