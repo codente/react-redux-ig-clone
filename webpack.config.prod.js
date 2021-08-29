@@ -4,13 +4,13 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'source-map',
   entry: [
-
-    './src/reduxstagram'
+    
+    './client/reduxstagram'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/public/
+    publicPath: '/static/'
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
@@ -31,12 +31,12 @@ module.exports = {
     {
       test: /\.js$/,
       loaders: ['babel'],
-      include: path.join(__dirname, 'src')
+      include: path.join(__dirname, 'client')
     },
     // CSS
-    {
-      test: /\.styl$/,
-      include: path.join(__dirname, 'src'),
+    { 
+      test: /\.styl$/, 
+      include: path.join(__dirname, 'client'),
       loader: 'style-loader!css-loader!stylus-loader'
     }
     ]
